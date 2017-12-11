@@ -1,0 +1,19 @@
+{
+  "name": "billimanjaro-client",
+  "version": "0.0.1",
+  "description": "Billimanjaro client area server",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/billimanjaro/client.git"
+  },
+  "author": "Billimanjaro Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/billimanjaro/client/issues"
+  },
+  "homepage": "https://github.com/billimanjaro/client#readme"
+}
