@@ -4,7 +4,10 @@
   "description": "Billimanjaro client area server",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npm run lint && jest",
+    "start": "node ./index.js",
+    "lint": "eslint .",
+    "start-dev": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/billimanjaro/client/issues"
   },
-  "homepage": "https://github.com/billimanjaro/client#readme"
+  "homepage": "https://github.com/billimanjaro/client#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "request-json": "^0.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "nodemon": "^1.12.5"
+  }
 }
