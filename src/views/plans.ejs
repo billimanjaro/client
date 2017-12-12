@@ -1,0 +1,6 @@
+<p>Our plans!</p>
+
+<% for(let i = 0; i < plans.length; i++) { %>
+	<p><%= plans[i].name %></p>
+	<p>$<%= (plans[i].amount/100).toPrecision(3) %> <%= plans[i].currency %> per <%= plans[i].interval %></p>
+<% } %>
