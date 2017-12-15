@@ -7,7 +7,7 @@ router.get('/plans', (req, res) => {
 	client.get('v1/package')
 		.then((data) => {
 			let plans = JSON.parse(data.res.body);
-
+			console.log(plans);
 			res.render('plans', {plans});
 		});
 });
