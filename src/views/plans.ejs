@@ -1,6 +1,12 @@
-<p>Our plans!</p>
+<%- include header.ejs %>
 
-<% for(let i = 0; i < plans.length; i++) { %>
-	<p><%= plans[i].name %></p>
-	<p>$<%= (plans[i].amount/100).toPrecision(3) %> <%= plans[i].currency %> per <%= plans[i].interval %></p>
+<h1>Our plans!</h1>
+
+<% for(let i = 0; i < plans.length; i++) {
+	if (plans[i].id > 0) { %>
+		<p><%= plans[i].name %></p>
+		<p>$<%= (plans[i].amount/100).toPrecision(3) %> <%= plans[i].currency %> per <%= plans[i].interval %></p>
+	<% } %>
 <% } %>
+
+<%- include footer.ejs %>
